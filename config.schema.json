@@ -1,0 +1,17 @@
+{
+  "pluginAlias": "DarkOutside",
+  "pluginType": "platform",
+  "singular": true,
+  "headerDisplay": "A sensor that turns on when it's dark outside. Use it in Home app automations for porch lights and curtains. The log shows the live light level every 10 minutes, so you can pick a good threshold.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": { "title": "Sensor name", "type": "string", "default": "Dark outside", "required": true },
+      "latitude": { "title": "Latitude", "type": "number", "placeholder": "51.44", "required": true, "description": "In Google Maps, right-click your house and click the numbers to copy them. The first number is latitude." },
+      "longitude": { "title": "Longitude", "type": "number", "placeholder": "-0.89", "required": true, "description": "The second number." },
+      "darkBelowLux": { "title": "Dark when light drops below (lux)", "type": "integer", "default": 300, "minimum": 1, "description": "Rough guide: 10,000+ bright day, 1,000 very dull day, 300 heavy gloom or dusk, 50 nearly night." },
+      "lightAboveLux": { "title": "Light again when it rises above (lux)", "type": "integer", "description": "Optional. Stops the sensor flicking on and off around the threshold. Defaults to 1.5 x the dark level." },
+      "refreshMinutes": { "title": "Check every (minutes)", "type": "integer", "default": 10, "minimum": 5 }
+    }
+  }
+}

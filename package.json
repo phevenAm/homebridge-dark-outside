@@ -1,0 +1,32 @@
+{
+  "name": "homebridge-dark-outside",
+  "displayName": "Dark Outside",
+  "version": "0.1.0",
+  "description": "A sensor in Apple Home that turns on when it gets dark outside, using live sunlight data. Catches gloomy days, not just sunset.",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "phevenAm",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phevenAm/homebridge-dark-outside.git"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "light",
+    "dark",
+    "lux",
+    "weather",
+    "open-meteo"
+  ],
+  "files": [
+    "index.js",
+    "config.schema.json",
+    "README.md",
+    "icon.png"
+  ],
+  "engines": {
+    "node": ">=18.15.0",
+    "homebridge": ">=1.6.0 || ^2.0.0-beta.0"
+  },
+  "icon": "https://raw.githubusercontent.com/phevenAm/homebridge-dark-outside/main/icon.png"
+}
